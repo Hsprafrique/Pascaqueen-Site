@@ -6,7 +6,7 @@
   <title>Pascaqueen Herbal Shop</title>
   <link rel="stylesheet" href="./dist/output.css">
 
-  <!-- Swiper.js for slider -->
+  <!-- Swiper.js -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -18,7 +18,7 @@
   <!-- Navigation -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-     <img src="/logo.jpg" alt="pascaqueen logo" class="h-16 w-auto">
+      <img src="/logo.jpg" alt="Pascaqueen logo" class="h-20 w-auto">
       <nav>
         <ul class="flex space-x-6 font-semibold text-gray-700">
           <li><a href="#home" class="hover:text-green-600">Home</a></li>
@@ -29,302 +29,283 @@
     </div>
   </header>
 
-<!-- Slider -->
-<div id="home" class="swiper mySwiper w-full h-64 md:h-96 rounded-lg shadow-lg mx-auto max-w-7xl mt-6">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="/slider1.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 1">
+  <!-- Slider -->
+  <div id="home" class="swiper mySwiper w-full h-64 md:h-96 rounded-lg shadow-lg mx-auto max-w-7xl mt-6">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/slider1.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="/slider2.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="/slider3.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 3">
+      </div>
     </div>
-    <div class="swiper-slide">
-      <img src="/slider2.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 2">
-    </div>
-    <div class="swiper-slide">
-      <img src="/slider3.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 3">
-    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
-
 
   <!-- Products Grid -->
-<section id="products" class="py-12 bg-green-50">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Herbal Products</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <section id="products" class="py-12 bg-green-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Herbal Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 
-      <!-- Product 1 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product1.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 1</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/14057656304?text=I%20want%20to%20order%20Herbal%20Product%201"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <!-- Product 1–20 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product1.jpg" class="w-full h-36 object-cover" alt="Herbal Product 1">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 1</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%201"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 2 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product2.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 2</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%202"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product2.jpg" class="w-full h-36 object-cover" alt="Herbal Product 2">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 2</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%202"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 3 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product3.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 3</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%203"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product3.jpg" class="w-full h-36 object-cover" alt="Herbal Product 3">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 3</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%203"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 4 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product4.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 4</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%204"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product4.jpg" class="w-full h-36 object-cover" alt="Herbal Product 4">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 4</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%204"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 5 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product5.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 5</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%205"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product5.jpg" class="w-full h-36 object-cover" alt="Herbal Product 5">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 5</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%205"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 6 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product6.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 6</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%206"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product6.jpg" class="w-full h-36 object-cover" alt="Herbal Product 6">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 6</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%206"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 7 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product7.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 7</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%207"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product7.jpg" class="w-full h-36 object-cover" alt="Herbal Product 7">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 7</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%207"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 8 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product8.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 8</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%208"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product8.jpg" class="w-full h-36 object-cover" alt="Herbal Product 8">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 8</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%208"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 9 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product9.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 9</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%209"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <!-- Continue same pattern for products 9–20 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product9.jpg" class="w-full h-36 object-cover" alt="Herbal Product 9">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 9</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%209"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 10 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product10.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 10</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2010"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product10.jpg" class="w-full h-36 object-cover" alt="Herbal Product 10">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 10</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2010"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 11 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product11.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 11</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2011"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product11.jpg" class="w-full h-36 object-cover" alt="Herbal Product 11">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 11</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2011"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 12 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product12.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 12</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2012"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product12.jpg" class="w-full h-36 object-cover" alt="Herbal Product 12">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 12</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2012"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 13 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product13.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 13</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2013"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product13.jpg" class="w-full h-36 object-cover" alt="Herbal Product 13">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 13</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2013"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 14 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product14.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 14</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2014"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product14.jpg" class="w-full h-36 object-cover" alt="Herbal Product 14">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 14</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2014"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 15 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product15.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 15</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2015"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product15.jpg" class="w-full h-36 object-cover" alt="Herbal Product 15">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 15</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2015"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 16 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product16.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 16</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2016"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product16.jpg" class="w-full h-36 object-cover" alt="Herbal Product 16">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 16</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2016"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 17 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product17.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 17</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2017"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product17.jpg" class="w-full h-36 object-cover" alt="Herbal Product 17">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 17</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2017"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 18 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product18.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 18</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2018"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product18.jpg" class="w-full h-36 object-cover" alt="Herbal Product 18">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 18</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2018"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 19 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product19.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 19</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2019"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product19.jpg" class="w-full h-36 object-cover" alt="Herbal Product 19">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 19</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2019"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
-      <!-- Product 20 -->
-      <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-        <img src="/product20.jpg" class="w-full h-36 object-cover">
-        <div class="p-4 flex flex-col flex-1 justify-between">
-          <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 20</h3>
-          <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-          <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2020"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-             ORDER
-          </a>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
+          <img src="/product20.jpg" class="w-full h-36 object-cover" alt="Herbal Product 20">
+          <div class="p-4 flex flex-col flex-1 justify-between">
+            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 20</h3>
+            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
+            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2020"
+               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
+               ORDER
+            </a>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- About Us -->
   <section id="about" class="py-12 max-w-6xl mx-auto px-6">
     <h2 class="text-3xl font-bold text-green-800 mb-4">About Us</h2>
-    <p class="text-gray-700">Pascaqueen is dedicated to providing quality herbal products. Our mission is to help you live naturally, healthy, and balanced.</p>
+    <p class="text-gray-700">Pascaqueen provides quality herbal products for natural wellness and balance. Trusted and delivered across Nigeria.</p>
   </section>
 
-<!-- Contact -->
+  <!-- Contact -->
   <section id="contact" class="py-12 max-w-6xl mx-auto px-6">
     <h2 class="text-3xl font-bold text-green-800 mb-4">Contact Us</h2>
     <p class="text-gray-700 mb-4">Send us a message on WhatsApp to place your order instantly.</p>
@@ -336,7 +317,7 @@
 
   <!-- Footer -->
   <footer class="bg-white py-6 text-center text-gray-700">
-    &copy; 2025 Pascaqueen Food LTD
+    &copy; 2025 Pascaqueen Herbal Shop
   </footer>
 
   <!-- Swiper Init -->
