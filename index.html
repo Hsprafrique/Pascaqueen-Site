@@ -18,7 +18,7 @@
   <!-- Navigation -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-      <img src="/logo.jpg" alt="Pascaqueen logo" class="h-20 w-auto">
+      <img src="/images/logo.jpg" alt="Pascaqueen logo" class="h-20 w-auto">
       <nav>
         <ul class="flex space-x-6 font-semibold text-gray-700">
           <li><a href="#home" class="hover:text-green-600">Home</a></li>
@@ -33,13 +33,19 @@
   <div id="home" class="swiper mySwiper w-full h-64 md:h-96 rounded-lg shadow-lg mx-auto max-w-7xl mt-6">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="/slider1.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 1">
+        <img src="/images/slider1.jpg" class="w-full h-full object-cover rounded-lg" alt="slider1">
       </div>
       <div class="swiper-slide">
-        <img src="/slider2.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 2">
+        <img src="/images/slider2.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 2">
       </div>
       <div class="swiper-slide">
-        <img src="/slider3.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 3">
+        <img src="/images/slider3.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 3">
+      </div>
+	<div class="swiper-slide">
+        <img src="/images/slider4.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 2">
+      </div>
+	<div class="swiper-slide">
+        <img src="/images/slider5.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 2">
       </div>
     </div>
     <div class="swiper-pagination"></div>
@@ -47,259 +53,238 @@
     <div class="swiper-button-next"></div>
   </div>
 
-  <!-- Products Grid -->
-  <section id="products" class="py-12 bg-green-50">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Herbal Products</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 py-6">
+  
+<section id="products" class="py-12 bg-green-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Herbal Products</h2>
 
-        <!-- Product 1–20 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-         <img src="./products/product.jpg" 
-     class="w-full h-48 object-cover rounded-t-lg" 
-     alt="product">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 1</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%201"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-fr">
+
+      <!-- PRODUCT 1 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/1.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Flat Tummy Herb</h3>
+          <p class="text-gray-700 flex-1 mb-4">Natural stomach-slimming blend.</p>
+          <a href="https://wa.me/14057656304?text=I want Flat Tummy Herb"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
         </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product2.jpg" class="w-full h-36 object-cover" alt="Herbal Product 2">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 2</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%202"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product3.jpg" class="w-full h-36 object-cover" alt="Herbal Product 3">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 3</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%203"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product4.jpg" class="w-full h-36 object-cover" alt="Herbal Product 4">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 4</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%204"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product5.jpg" class="w-full h-36 object-cover" alt="Herbal Product 5">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 5</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%205"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product6.jpg" class="w-full h-36 object-cover" alt="Herbal Product 6">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 6</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%206"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product7.jpg" class="w-full h-36 object-cover" alt="Herbal Product 7">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 7</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%207"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product8.jpg" class="w-full h-36 object-cover" alt="Herbal Product 8">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 8</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%208"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <!-- Continue same pattern for products 9–20 -->
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product9.jpg" class="w-full h-36 object-cover" alt="Herbal Product 9">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 9</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%209"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product10.jpg" class="w-full h-36 object-cover" alt="Herbal Product 10">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 10</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2010"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product11.jpg" class="w-full h-36 object-cover" alt="Herbal Product 11">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 11</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2011"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product12.jpg" class="w-full h-36 object-cover" alt="Herbal Product 12">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 12</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2012"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product13.jpg" class="w-full h-36 object-cover" alt="Herbal Product 13">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 13</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2013"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product14.jpg" class="w-full h-36 object-cover" alt="Herbal Product 14">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 14</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2014"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product15.jpg" class="w-full h-36 object-cover" alt="Herbal Product 15">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 15</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2015"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product16.jpg" class="w-full h-36 object-cover" alt="Herbal Product 16">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 16</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2016"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product17.jpg" class="w-full h-36 object-cover" alt="Herbal Product 17">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 17</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2017"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product18.jpg" class="w-full h-36 object-cover" alt="Herbal Product 18">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 18</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2018"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product19.jpg" class="w-full h-36 object-cover" alt="Herbal Product 19">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 19</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2019"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
-        <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col transform transition hover:-translate-y-1 hover:shadow-xl">
-          <img src="/product20.jpg" class="w-full h-36 object-cover" alt="Herbal Product 20">
-          <div class="p-4 flex flex-col flex-1 justify-between">
-            <h3 class="font-semibold text-md text-green-900 mb-1">Herbal Product 20</h3>
-            <p class="text-gray-700 text-sm mb-2">Short description here.</p>
-            <a href="https://wa.me/234XXXXXXXXXX?text=I%20want%20to%20order%20Herbal%20Product%2020"
-               class="bg-green-600 hover:bg-green-700 text-white text-center py-1 rounded-md text-sm font-semibold">
-               ORDER
-            </a>
-          </div>
-        </div>
-
       </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/2.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Eye Bright Herb</h3>
+          <p class="text-gray-700 flex-1 mb-4">Supports clear eyesight.</p>
+          <a href="https://wa.me/14057656304?text=I want Eye Bright Herb"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/3.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Blood Cleanser</h3>
+          <p class="text-gray-700 flex-1 mb-4">Body detox and circulation booster.</p>
+          <a href="https://wa.me/14057656304?text=I want Blood Cleanser"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 4 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/4.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Fertility Booster</h3>
+          <p class="text-gray-700 flex-1 mb-4">Reproductive system support.</p>
+          <a href="https://wa.me/14057656304?text=I want Fertility Booster"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 5 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/5.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Stroke Recovery Mix</h3>
+          <p class="text-gray-700 flex-1 mb-4">Nerve + brain restoration herbs.</p>
+          <a href="https://wa.me/14057656304?text=I want Stroke Recovery Mix"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 6 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/6.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Immune Booster</h3>
+          <p class="text-gray-700 flex-1 mb-4">Supports natural immunity.</p>
+          <a href="https://wa.me/14057656304?text=I want Immune Booster"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 7 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/7.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Skin Glow Mix</h3>
+          <p class="text-gray-700 flex-1 mb-4">Brightens and clears skin naturally.</p>
+<a href="https://wa.me/14057656304?text=I want Skin Glow Mix"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 8 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/8.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Sugar Level Balance</h3>
+          <p class="text-gray-700 flex-1 mb-4">Natural sugar regulation.</p>
+          <a href="https://wa.me/14057656304?text=I want Sugar Level Balance"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 9 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/9.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Ovulation Rotator</h3>
+          <p class="text-gray-700 flex-1 mb-4">Cycle regulation formula.</p>
+          <a href="https://wa.me/14057656304?text=I want Ovulation Rotator"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 10 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/10.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Liver Cleanser</h3>
+          <p class="text-gray-700 flex-1 mb-4">Deep liver detox.</p>
+          <a href="https://wa.me/14057656304?text=I want Liver Cleanser"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- PRODUCT 11 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/11.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Menstrual Flow Regulator</h3>
+          <p class="text-gray-700 flex-1 mb-4">Balances menstrual cycle.</p>
+          <a href="https://wa.me/14057656304?text=I want Menstrual Flow Regulator"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/12.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Fibroid Shrinker</h3>
+          <p class="text-gray-700 flex-1 mb-4">Shrinks fibroid growth naturally.</p>
+          <a href="https://wa.me/14057656304?text=I want Fibroid Shrinker"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/13.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">High Blood Pressure Mix</h3>
+          <p class="text-gray-700 flex-1 mb-4">Supports healthy BP levels.</p>
+          <a href="https://wa.me/14057656304?text=I want High Blood Pressure Mix"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- 14 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/14.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Joint Pain Reliever</h3>
+          <p class="text-gray-700 flex-1 mb-4">For joints + inflammation.</p>
+          <a href="https://wa.me/14057656304?text=I want Joint Pain Reliever"
+
+🤖, [11/14/2025 11:28 PM]
+class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/15.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Prostate Care Formula</h3>
+          <p class="text-gray-700 flex-1 mb-4">Supports prostate health.</p>
+          <a href="https://wa.me/14057656304?text=I want Prostate Care Formula"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- 16 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/16.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Arthritis Treatment</h3>
+          <p class="text-gray-700 flex-1 mb-4">Deep bone + joint therapy.</p>
+          <a href="https://wa.me/14057656304?text=I want Arthritis Treatment"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- 17 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/17.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Weight Gain Herbal Mix</h3>
+          <p class="text-gray-700 flex-1 mb-4">Healthy weight-building formula.</p>
+          <a href="https://wa.me/14057656304?text=I want Weight Gain Herbal Mix"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- 18 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/18.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Ulcer Treatment</h3>
+          <p class="text-gray-700 flex-1 mb-4">Heals stomach lining.</p>
+          <a href="https://wa.me/14057656304?text=I want Ulcer Treatment"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- 19 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/19.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">General Body Cleanser</h3>
+          <p class="text-gray-700 flex-1 mb-4">Total body detox.</p>
+          <a href="https://wa.me/14057656304?text=I want General Body Cleanser"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
+      <!-- 20 -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+        <img src="./images/20.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1">
+          <h3 class="font-semibold mb-2">Heart Health Formula</h3>
+          <p class="text-gray-700 flex-1 mb-4">Strengthens heart function.</p>
+          <a href="https://wa.me/14057656304?text=I want Heart Health Formula"
+             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- About Us -->
   <section id="about" class="py-12 max-w-6xl mx-auto px-6">
