@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Pascaqueen website project",
   "main": "index.js",
-  "scripts": {
-    "dev": "vite",
-     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "preview": "vite preview",
-    "build:css": "tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}
   "author": "",
   "license": "ISC",
   "devDependencies": {
