@@ -1,13 +1,13 @@
 {
-  "name": "pascaqueen site",
+  "name": "pascaqueen-site",
   "version": "1.0.0",
   "description": "Pascaqueen website project",
   "main": "index.js",
- "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-}
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
