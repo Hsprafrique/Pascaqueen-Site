@@ -4,204 +4,176 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pascaqueen Herbal Shop</title>
-  <link rel="stylesheet" href="./dist/output.css">
-
-  <!-- Swiper.js -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Swiper.js for slider -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
-<body class="bg-gradient-to-b from-green-50 via-green-100 to-green-50 font-sans">
+<body class="bg-gradient-to-b from-green-50 via-green-100 to-green-50 font-sans text-gray-900">
 
-  <!-- Navigation -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
+  <!-- Header & Nav -->
+  <header class="bg-black text-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
-      <img src="/images/logo.jpg" alt="Pascaqueen logo" class="h-20 w-auto">
+      <img src="/images/logo.jpg" alt="Pascaqueen logo" class="h-16 sm:h-20 md:h-24 w-auto object-contain">
       <nav>
-        <ul class="flex space-x-6 font-semibold text-gray-700">
-          <li><a href="#home" class="hover:text-green-600">Home</a></li>
-          <li><a href="#about" class="hover:text-green-600">About Us</a></li>
-          <li><a href="#contact" class="hover:text-green-600">Contact</a></li>
+        <ul class="flex space-x-5 sm:space-x-6 font-semibold text-sm sm:text-base">
+          <li><a href="#home" class="hover:text-green-400">Home</a></li>
+          <li><a href="#products" class="hover:text-green-400">Products</a></li>
+          <li><a href="#about" class="hover:text-green-400">About Us</a></li>
+          <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Slider -->
-  <div id="home" class="swiper mySwiper w-full h-64 md:h-96 rounded-lg shadow-lg mx-auto max-w-7xl mt-6">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="/images/slider1.jpg" class="w-full h-full object-cover rounded-lg" alt="slider1">
+  <!-- Slider Section -->
+  <section id="home" class="py-6 px-4">
+    <div class="swiper mySwiper max-w-7xl mx-auto rounded-lg overflow-hidden shadow-lg">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/images/slider1.jpg" class="w-full h-56 sm:h-64 md:h-80 lg:h-[480px] object-cover"></div>
+        <div class="swiper-slide"><img src="/images/slider2.jpg" class="w-full h-56 sm:h-64 md:h-80 lg:h-[480px] object-cover"></div>
+        <div class="swiper-slide"><img src="/images/slider3.jpg" class="w-full h-56 sm:h-64 md:h-80 lg:h-[480px] object-cover"></div>
+        <div class="swiper-slide"><img src="/images/slider4.jpg" class="w-full h-56 sm:h-64 md:h-80 lg:h-[480px] object-cover"></div>
+        <div class="swiper-slide"><img src="/images/slider5.jpg" class="w-full h-56 sm:h-64 md:h-80 lg:h-[480px] object-cover"></div>
       </div>
-      <div class="swiper-slide">
-        <img src="/images/slider2.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 2">
-      </div>
-      <div class="swiper-slide">
-        <img src="/images/slider3.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 3">
-      </div>
-	<div class="swiper-slide">
-        <img src="/images/slider4.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 2">
-      </div>
-	<div class="swiper-slide">
-        <img src="/images/slider5.jpg" class="w-full h-full object-cover rounded-lg" alt="Herbal banner 2">
-      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev text-green-500"></div>
+      <div class="swiper-button-next text-green-500"></div>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-
-  
-<section id="products" class="py-12 bg-green-50">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-8 text-green-800">Our Herbal Products</h2>
-
-    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-fr">
-
-      <!-- PRODUCT 1 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-        <img src="/images/product1.jpg" class="w-full h-48 object-cover">
-        <div class="p-4 flex flex-col flex-1">
-          <h3 class="font-semibold mb-2">Flat Tummy Herb</h3>
-          <p class="text-gray-700 flex-1 mb-4">Natural stomach-slimming blend.</p>
-          <a href="https://wa.me/14057656304?text=I want Flat Tummy Herb"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
-        </div>
-      </div>
-
-      <!-- PRODUCT 2 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-        <img src="/images/product2.jpg" class="w-full h-48 object-cover">
-        <div class="p-4 flex flex-col flex-1">
-          <h3 class="font-semibold mb-2">Eye Bright Herb</h3>
-          <p class="text-gray-700 flex-1 mb-4">Supports clear eyesight.</p>
-          <a href="https://wa.me/14057656304?text=I want Eye Bright Herb"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
-        </div>
-      </div>
-
-      <!-- PRODUCT 3 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-        <img src="/images/product3.jpg" class="w-full h-48 object-cover">
-        <div class="p-4 flex flex-col flex-1">
-          <h3 class="font-semibold mb-2">Blood Cleanser</h3>
-          <p class="text-gray-700 flex-1 mb-4">Body detox and circulation booster.</p>
-          <a href="https://wa.me/14057656304?text=I want Blood Cleanser"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
-        </div>
-      </div>
-
-      <!-- PRODUCT 4 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-        <img src="/images/product4.jpg" class="w-full h-48 object-cover">
-        <div class="p-4 flex flex-col flex-1">
-          <h3 class="font-semibold mb-2">Fertility Booster</h3>
-          <p class="text-gray-700 flex-1 mb-4">Reproductive system support.</p>
-          <a href="https://wa.me/14057656304?text=I want Fertility Booster"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
-        </div>
-      </div>
-
-      <!-- PRODUCT 5 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-        <img src="/images/product5.jpg" class="w-full h-48 object-cover">
-        <div class="p-4 flex flex-col flex-1">
-          <h3 class="font-semibold mb-2">Stroke Recovery Mix</h3>
-          <p class="text-gray-700 flex-1 mb-4">Nerve + brain restoration herbs.</p>
-          <a href="https://wa.me/14057656304?text=I want Stroke Recovery Mix"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
-        </div>
-      </div>
-
-      <!-- PRODUCT 6 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-        <img src="/images/product6.jpg" class="w-full h-48 object-cover">
-        <div class="p-4 flex flex-col flex-1">
-          <h3 class="font-semibold mb-2">Immune Booster</h3>
-          <p class="text-gray-700 flex-1 mb-4">Supports natural immunity.</p>
-          <a href="https://wa.me/14057656304?text=I want Immune Booster"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
-        </div>
-      </div>
-
-      <!-- PRODUCT 7 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-        <img src="/images/product7.jpg" class="w-full h-48 object-cover">
-        <div class="p-4 flex flex-col flex-1">
-          <h3 class="font-semibold mb-2">Skin Glow Mix</h3>
-          <p class="text-gray-700 flex-1 mb-4">Brightens and clears skin naturally.</p>
-<a href="https://wa.me/14057656304?text=I want Skin Glow Mix"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
-        </div>
-      </div>
-
-      <!-- PRODUCT 8 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-        <img src="/images/8.jpg" class="w-full h-48 object-cover">
-        <div class="p-4 flex flex-col flex-1">
-          <h3 class="font-semibold mb-2">Sugar Level Balance</h3>
-          <p class="text-gray-700 flex-1 mb-4">Natural sugar regulation.</p>
-          <a href="https://wa.me/14057656304?text=I want Sugar Level Balance"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
-        </div>
-      </div>
-
-      <!-- PRODUCT 9 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-        <img src="/images/9.jpg" class="w-full h-48 object-cover">
-        <div class="p-4 flex flex-col flex-1">
-          <h3 class="font-semibold mb-2">Ovulation Rotator</h3>
-          <p class="text-gray-700 flex-1 mb-4">Cycle regulation formula.</p>
-          <a href="https://wa.me/14057656304?text=I want Ovulation Rotator"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
-        </div>
-      </div>
-
-      <!-- PRODUCT 10 -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-        <img src="/images/10.jpg" class="w-full h-48 object-cover">
-        <div class="p-4 flex flex-col flex-1">
-          <h3 class="font-semibold mb-2">Liver Cleanser</h3>
-          <p class="text-gray-700 flex-1 mb-4">Deep liver detox.</p>
-          <a href="https://wa.me/14057656304?text=I want Liver Cleanser"
-             class="bg-green-600 hover:bg-green-700 text-white text-center py-2 rounded-md">ORDER</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-  <!-- About Us -->
-  <section id="about" class="py-12 max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-green-800 mb-4">About Us</h2>
-    <p class="text-gray-700">Pascaqueen provides quality herbal products for natural wellness and balance. Trusted and delivered across Nigeria.</p>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-12 max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-green-800 mb-4">Contact Us</h2>
-    <p class="text-gray-700 mb-4">Send us a message on WhatsApp to place your order instantly.</p>
-    <a href="https://wa.me/234XXXXXXXXXX"
-       class="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-md font-semibold">
-       ORDER
+  <!-- Products Grid -->
+  <section id="products" class="py-10 px-4">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center text-green-900 mb-8">Our Herbal Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+
+      <!-- Product Cards -->
+      <div class="bg-black rounded-lg overflow-hidden shadow-md flex flex-col text-white">
+        <img src="/images/product1.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Flat Tummy Herb</h3>
+          <p class="text-gray-300 flex-1 mb-4">Natural stomach-slimming blend.</p>
+          <a href="https://wa.me/14057656304?text=I want Flat Tummy Herb" class="bg-green-700 hover:bg-green-800 text-white py-2 rounded-md text-center text-sm">ORDER</a>
+        </div>
+      </div>
+
+      <div class="bg-black rounded-lg overflow-hidden shadow-md flex flex-col text-white">
+        <img src="/images/product2.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Eye Bright Herb</h3>
+          <p class="text-gray-300 flex-1 mb-4">Supports clear eyesight.</p>
+          <a href="https://wa.me/14057656304?text=I want Eye Bright Herb" class="bg-green-700 hover:bg-green-800 text-white py-2 rounded-md text-center text-sm">ORDER</a>
+        </div>
+      </div>
+
+      <div class="bg-black rounded-lg overflow-hidden shadow-md flex flex-col text-white">
+        <img src="/images/product3.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Blood Cleanser</h3>
+          <p class="text-gray-300 flex-1 mb-4">Body detox and circulation booster.</p>
+          <a href="https://wa.me/14057656304?text=I want Blood Cleanser" class="bg-green-700 hover:bg-green-800 text-white py-2 rounded-md text-center text-sm">ORDER</a>
+        </div>
+      </div>
+
+      <div class="bg-black rounded-lg overflow-hidden shadow-md flex flex-col text-white">
+        <img src="/images/product4.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Fertility Booster</h3>
+          <p class="text-gray-300 flex-1 mb-4">Reproductive system support.</p>
+          <a href="https://wa.me/14057656304?text=I want Fertility Booster" class="bg-green-700 hover:bg-green-800 text-white py-2 rounded-md text-center text-sm">ORDER</a>
+        </div>
+      </div>
+
+      <div class="bg-black rounded-lg overflow-hidden shadow-md flex flex-col text-white">
+        <img src="/images/product5.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Stroke Recovery Mix</h3>
+          <p class="text-gray-300 flex-1 mb-4">Nerve + brain restoration herbs.</p>
+          <a href="https://wa.me/14057656304?text=I want Stroke Recovery Mix" class="bg-green-700 hover:bg-green-800 text-white py-2 rounded-md text-center text-sm">ORDER</a>
+        </div>
+      </div>
+
+      <div class="bg-black rounded-lg overflow-hidden shadow-md flex flex-col text-white">
+        <img src="/images/product6.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Immune Booster</h3>
+          <p class="text-gray-300 flex-1 mb-4">Supports natural immunity.</p>
+          <a href="https://wa.me/14057656304?text=I want Immune Booster" class="bg-green-700 hover:bg-green-800 text-white py-2 rounded-md text-center text-sm">ORDER</a>
+        </div>
+      </div>
+
+      <div class="bg-black rounded-lg overflow-hidden shadow-md flex flex-col text-white">
+        <img src="/images/product7.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Skin Glow Mix</h3>
+          <p class="text-gray-300 flex-1 mb-4">Brightens and clears skin.</p>
+          <a href="https://wa.me/14057656304?text=I want Skin Glow Mix" class="bg-green-700 hover:bg-green-800 text-white py-2 rounded-md text-center text-sm">ORDER</a>
+        </div>
+      </div>
+
+      <div class="bg-black rounded-lg overflow-hidden shadow-md flex flex-col text-white">
+        <img src="/images/product8.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Sugar Level Balance</h3>
+          <p class="text-gray-300 flex-1 mb-4">Natural sugar regulation.</p>
+          <a href="https://wa.me/14057656304?text=I want Sugar Level Balance" class="bg-green-700 hover:bg-green-800 text-white py-2 rounded-md text-center text-sm">ORDER</a>
+        </div>
+      </div>
+
+      <div class="bg-black rounded-lg overflow-hidden shadow-md flex flex-col text-white">
+        <img src="/images/product9.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Ovulation Rotator</h3>
+          <p class="text-gray-300 flex-1 mb-4">Cycle regulation formula.</p>
+          <a href="https://wa.me/14057656304?text=I want Ovulation Rotator" class="bg-green-700 hover:bg-green-800 text-white py-2 rounded-md text-center text-sm">ORDER</a>
+        </div>
+      </div>
+
+      <div class="bg-black rounded-lg overflow-hidden shadow-md flex flex-col text-white">
+        <img src="/images/product10.jpg" class="w-full h-48 object-cover">
+        <div class="p-4 flex flex-col flex-1 justify-between">
+          <h3 class="font-semibold text-lg mb-2">Liver Cleanser</h3>
+          <p class="text-gray-300 flex-1 mb-4">Deep liver detox.</p>
+          <a href="https://wa.me/14057656304?text=I want Liver Cleanser" class="bg-green-700 hover:bg-green-800 text-white py-2 rounded-md text-center text-sm">ORDER</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-10 px-6 max-w-6xl mx-auto">
+    <h2 class="text-2xl sm:text-3xl font-bold text-green-900 mb-4">About Us</h2>
+    <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
+      Pascaqueen provides quality herbal wellness products, trusted and delivered across Nigeria, crafted to restore balance the way nature intended.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-10 px-6 max-w-6xl mx-auto">
+    <h2 class="text-2xl sm:text-3xl font-bold text-green-900 mb-4">Contact Us</h2>
+    <p class="text-gray-800 text-sm sm:text-base mb-6">
+      Orders happen fast on WhatsApp, questions get answered with herbal wisdom.
+    </p>
+    <a href="https://wa.me/14057656304?text=Hello Pascaqueen" 
+       class="bg-green-700 hover:bg-green-800 text-white py-3 px-6 rounded-md font-semibold text-sm sm:text-base">
+       ORDER NOW
     </a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-white py-6 text-center text-gray-700">
-    &copy; 2025 Pascaqueen Herbal Shop
+  <footer class="bg-black text-white py-6 text-center border-t border-gray-800 mt-12 text-xs sm:text-sm">
+    &copy; 2025 Pascaqueen Herbal Shop. Made with plant alchemy and code sorcery.
   </footer>
 
-  <!-- Swiper Init -->
+  <!-- Swiper slider INIT -->
   <script>
-    const swiper = new Swiper(".mySwiper", {
+    new Swiper(".mySwiper", {
       loop: true,
       pagination: { el: ".swiper-pagination", clickable: true },
       navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-      autoplay: { delay: 3000 },
+      autoplay: { delay: 3000, disableOnInteraction: false }
     });
   </script>
 
